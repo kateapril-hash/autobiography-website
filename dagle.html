@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Autobiography | Kate 💜</title>
+  <style>
+    /* 🌸 General Page Style */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #d9b3ff, #f2ccff, #e3c6ff, #d1b3ff);
+      background-size: 300% 300%;
+      animation: gradientMove 10s ease infinite;
+      overflow: hidden;
+    }
+
+    /* 🌈 Moving Gradient Animation */
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 💫 Floating Sparkles */
+    .sparkle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(-40px); opacity: 0.6; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    /* 💜 Card Container */
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 30px;
+      padding: 35px;
+      box-shadow: 0 10px 30px rgba(140, 82, 255, 0.3);
+      width: 360px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.5s ease;
+      z-index: 2;
+    }
+
+    /* ✨ Fade-in Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 🌸 Profile Image */
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #cba4ff;
+      box-shadow: 0 0 20px rgba(190, 130, 255, 0.6);
+      transition: all 0.4s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px rgba(180, 100, 255, 0.8);
+    }
+
+    /* 💖 Text Styling */
+    h1 {
+      color: #7a4ed9;
+      font-size: 26px;
+      margin-top: 15px;
+    }
+
+    .intro, .details {
+      color: #4b3b69;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    /* 💕 Social Links */
+    .social-links {
+      margin-top: 25px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(90deg, #b388ff, #cfa9ff);
+      padding: 10px 25px;
+      margin: 6px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(164, 98, 255, 0.3);
+    }
+
+    .social-links a:hover {
+      background: linear-gradient(90deg, #a56cff, #d4a9ff);
+      transform: scale(1.07);
+      box-shadow: 0 6px 15px rgba(150, 80, 255, 0.4);
+    }
+
+    /* 🩷 Footer Small Note */
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 12px;
+      color: #684b99;
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 💫 Sparkles for Decoration -->
+  <div class="sparkle" style="top: 10%; left: 20%; animation-delay: 0s;"></div>
+  <div class="sparkle" style="top: 30%; left: 80%; animation-delay: 1s;"></div>
+  <div class="sparkle" style="top: 60%; left: 10%; animation-delay: 2s;"></div>
+  <div class="sparkle" style="top: 80%; left: 70%; animation-delay: 3s;"></div>
+  <div class="sparkle" style="top: 50%; left: 50%; animation-delay: 4s;"></div>
+
+  <!-- 🌸 Main Card -->
+  <div class="card">
+    <img src="received_1694799977902539.jpeg" alt="My Photo" class="profile-img">
+    <h1>Hi, I'm Kate </h1>
+    <p class="intro">
+      Hello! I'm a student of Lapu-Lapu City College. I’m a simple, cheerful, and kind-hearted person who enjoys learning new things and spending time with friends. I believe in growing each day and facing challenges with a smile.Born on April 11,2007 in Borbon, Cebu and Im very thankful that ever since i saw how cruel the world for me i'm thanking God that i've meet Him and know Him because i'm nothing without God in my life.' ✨
+    </p>
+    <p class="details">
+      I love capturing memories, exploring new experiences, and sharing my happiness with the people around me.  
+      My dream is to achieve success while staying true to myself and helping others along the way.
+    </p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/1BTeGH4TKu/" target="_blank">💙 Facebook</a>
+      <a href="https://www.instagram.com/aprilifhopia?igsh=MXd2dDB6cmcxZTNqaA==" target="_blank">💜 Instagram</a>
+    </div>
+  </div>
+
+  <footer>© 2025 April | Made with 💖</footer>
+</body>
+</html>
